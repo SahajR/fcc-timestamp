@@ -4,6 +4,10 @@ var app = express(), port = process.env.PORT || 8080;
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get("/", function(req, res){
+  res.send("Please input some timestamp or date to test the microservice!");
+});
+
 app.get('/:num', function (req, res) {
   var d = {};
   var udate = parseDate(req.params.num);
