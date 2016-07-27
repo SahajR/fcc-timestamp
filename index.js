@@ -31,6 +31,6 @@ app.listen(port, function () {
 
 function parseDate(inDate) { 
    var outDate = Date.parse(inDate);
-   if(isNaN(outDate)) return null;
+   if(isNaN(outDate)) return -1;
    return outDate;
 }
