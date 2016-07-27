@@ -1,6 +1,6 @@
 var moment = require('moment');
 var express = require('express');
-var app = express();
+var app = express(), port = process.env.PORT || 8080;
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -25,8 +25,8 @@ app.get('/:num', function (req, res) {
   res.send(d);
 });
 
-app.listen(8080, function () {
-  console.log('App listening on port 8080!');
+app.listen(port, function () {
+  console.log('App listening on port ' + port + '!');
 });
 
 function parseDate(inDate) { 
