@@ -1,0 +1,8 @@
+{
+  "name": "Timestamp microservice fcc",
+  "description": "A timestamp microservice by sahajr",
+  "repository": "https://github.com/SahajR/fcc-timestamp.git",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
